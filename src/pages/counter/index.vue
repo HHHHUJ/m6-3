@@ -9,24 +9,22 @@
 </template>
 
 <script>
-// Use Vuex
-import store from './store'
 
 export default {
   computed: {
-    count () {
-      return store.state.count
+    count() {
+      return this.$store.state.count;
     }
   },
   methods: {
-    increment () {
-      store.commit('increment')
+    increment(){
+      this.$store.commit("increment");
     },
-    decrement () {
-      store.commit('decrement')
+    decrement() {
+      this.$store.commit("decrement");
     }
   }
-}
+};
 </script>
 
 <style>

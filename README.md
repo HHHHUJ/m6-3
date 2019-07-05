@@ -35,3 +35,7 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## 项目结构
+1. App.vue相当于原生的app.js和app.wxss,可以写全局的逻辑和样式

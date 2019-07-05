@@ -1,5 +1,11 @@
-// https://vuex.vuejs.org/zh-cn/intro.html
-// make sure to call Vue.use(Vuex) if using a module system
+/*
+ *
+ *
+ * @Author: hujie
+ * @Date: 2019-07-05 10:45:05
+ * @Last Modified by: hujie
+ * @Last Modified time: 2019-07-05 10:45:56
+ */
 import Vue from 'vue'
 import Vuex from 'vuex'
 

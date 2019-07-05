@@ -23,6 +23,7 @@
     </form>
 
     <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
+    <a href="/pages/test/main" class="counter">测试界面</a>
 
     <div class="all">
         <div class="left">
@@ -53,12 +54,15 @@ export default {
 
   methods: {
     bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
+      // const url = '../logs/main'
+      // if (mpvuePlatform === 'wx') {
+      //   mpvue.switchTab({ url })
+      // } else {
+      //   mpvue.navigateTo({ url })
+      // }
+      mpvue.navigateTo({
+        url: '../logs/main'
+       })
     },
     clickHandle (ev) {
       console.log('clickHandle:', ev)
