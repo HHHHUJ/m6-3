@@ -1,5 +1,6 @@
 <template lang='pug'>
-
+  div
+    button 上传图片
 </template>
 
 <script>
@@ -10,8 +11,8 @@ export default {
     };
   },
   mounted() {
-    const db = mpvue.cloud.database({env: 'hujie-b7d5f7'})
-    this.db.collection('books').get()
+    // const db = mpvue.cloud.database()
+    this.$db.collection('goods').where({name:'童装'}).get()
     .then(res=>{
       console.log(res.data)
     })
@@ -21,5 +22,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
-
+  .test {
+    color:#333333;
+  }
 </style>
