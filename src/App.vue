@@ -31,5 +31,7 @@ export default {
 </script>
 
 <style>
-
+  @import './style/reset.less';
+  @import './style/mixins.less';
+  @import './style/theme.less';
 </style>

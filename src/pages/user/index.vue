@@ -1,7 +1,8 @@
 <template lang="pug">
-.box 123
-  .smallbox 456
-
+div
+  .user #[p 1]#[p 2]
+  button(@click="goto") 评论
+  a(href="../logs/main") 日志
 </template>
 
 <script>
@@ -10,6 +11,22 @@ export default {
     return {
       msg: 'hello'
     };
+  },
+  onLoad() {
+    this.getList();
+  },
+  methods: {
+    pull() {
+      console.log(123)
+    },
+    goto() {
+      console.log(this.$router.push('/pages/logs/main?name=123'))
+    },
+    getList() {
+      this.$ajaxGet(`hello`, {name:'world'}).then(res=>{
+        console.log(res);
+      })
+    }
   }
 };
 </script>
@@ -22,6 +39,7 @@ export default {
     font-size:18px;
     .smallbox {
       color:yellow;
+      height:500px;
     }
   }
 </style>

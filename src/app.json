@@ -1,10 +1,41 @@
 {
   "pages": [
-    "pages/index/main",
-    "pages/user/main",
-    "pages/logs/main",
-    "pages/counter/main",
-    "pages/test/main"
+    {
+      "path": "/pages/index/index",
+      "config": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      },
+      "route": "pages/index/main"
+    },
+    {
+      "path": "/pages/user/index",
+      "config": {
+        "navigationBarTitleText": "个人中心"
+      },
+      "route": "pages/user/main"
+    },
+    {
+      "path": "/pages/test/index",
+      "config": {
+        "navigationBarTitleText": "测试"
+      },
+      "route": "pages/test/main"
+    },
+    {
+      "path": "/pages/upload/index",
+      "config": {
+        "navigationBarTitleText": "上传"
+      },
+      "route": "pages/upload/main"
+    },
+    {
+      "path": "/pages/logs/index",
+      "config": {
+        "navigationBarTitleText": "日志"
+      },
+      "route": "pages/logs/main"
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,6 +58,16 @@
       "pagePath": "pages/user/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
+    }, {
+      "text": "测试",
+      "pagePath": "pages/test/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    }, {
+      "text": "上传",
+      "pagePath": "pages/upload/main",
+      "iconPath": "static/tabs/upload.png",
+      "selectedIconPath": "static/tabs/upload-active.png"
     }],
     "position": "bottom"
   },

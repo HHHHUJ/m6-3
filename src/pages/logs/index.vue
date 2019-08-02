@@ -10,9 +10,12 @@
 
     <ul class="container log-list">
       <li v-for="(log, index) in logs" :class="{ red: aa }" :key="index" class="log-item">
-        <card :text="(index + 1) + ' . ' + log"></card>
+        <span>{{index+1}}.{{log}}</span>
       </li>
     </ul>
+    <div>
+      {{$route.query.name}}
+    </div>
   </div>
 </template>
 

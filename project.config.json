@@ -1,5 +1,5 @@
 {
-	"cloudfunctionRoot": "./cloud-functions",
+	"cloudfunctionRoot": "cloud-functions/",
 	"description": "项目配置文件。",
 	"setting": {
 		"urlCheck": false,
@@ -7,12 +7,15 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkSiteMap": false
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
 	"appid": "wx49ff8c8d02bcd086",
 	"projectname": "mpvueapp",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
