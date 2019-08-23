@@ -39,3 +39,15 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## 项目结构
 1. App.vue相当于原生的app.js和app.wxss,可以写全局的逻辑和样式
+2. wxParse组件内可以使用v-html和v-text
+
+
+## 打包路径
+
+- index: 模板
+- assetRoot: 打包后文件要存放的路径
+- assetsSubDirectory: 除了 index.html 之外的静态资源要存放的路径，
+- assetsPublicPath: 代表打包后，index.html里面引用资源的的相对地址
+
+## vue语法
+- this.$forceUpdate()数组改变，更新试图

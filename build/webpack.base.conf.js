@@ -118,13 +118,13 @@ let baseWebpackConfig = {
     // }], {
     //   context: 'src/'
     // }),
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: path.resolve(__dirname, '../static'),
-    //     to: path.resolve(config.build.assetsRoot, './static'),
-    //     ignore: ['.*']
-    //   }
-    // ])
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../static'),
+        to: path.resolve(config.build.assetsRoot, './static'),
+        ignore: ['.*']
+      }
+    ])
   ]
 }
 

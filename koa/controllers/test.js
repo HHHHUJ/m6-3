@@ -1,8 +1,7 @@
 const fs = require('fs');
 const fn_test = async (ctx, next) => {
-  ctx.response.body = '1111';
+  ctx.render('index',{msg:'hello world'});
 };
-console.log(__filename)
 module.exports = {
   'GET /test': fn_test
 };

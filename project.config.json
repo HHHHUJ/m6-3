@@ -8,7 +8,14 @@
 		"minified": true,
 		"newFeature": true,
 		"autoAudits": false,
-		"checkSiteMap": false
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
