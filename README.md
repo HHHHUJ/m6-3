@@ -51,3 +51,20 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## vue语法
 - this.$forceUpdate()数组改变，更新试图
+
+## 云函数
+
+// mpvue.cloud.callFunction({
+//   name: 'getOpenId'
+// })
+// .then(res=>{
+//   console.log(res);
+// })
+
+
+
+#2c2c2c
+#FF6138
+
+
+#cdcdcd

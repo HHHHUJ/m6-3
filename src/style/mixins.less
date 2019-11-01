@@ -1,0 +1,59 @@
+.nd {
+  font-size:22px;
+  color:#636363;
+  text-align: center;
+  padding:25px 0px;
+}
+
+.flex {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.margin-and-padding(@i: 0) when (@i <= 200) {
+  .ml@{i} { margin-left: unit(@i , px) }
+  .mr@{i} { margin-right: unit(@i , px) }
+  .mt@{i} { margin-top: unit(@i , px) }
+  .mb@{i} { margin-bottom: unit(@i , px) }
+  .pl@{i} { padding-left: unit(@i , px) }
+  .pr@{i} { padding-right: unit(@i , px) }
+  .pt@{i} { padding-top: unit(@i , px) }
+  .pb@{i} { padding-bottom: unit(@i , px) }
+  .margin-and-padding(@i + 1);
+}
+.margin-and-padding();
+
+.fcf { color: #fff; }
+.fc3 { color: #333; }
+.fc6 { color: #666; }
+.fc9 { color: #999; }
+.tac { text-align: center; }
+.tal { text-align: left; }
+.tar { text-align: right; }
+.toe-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.toe-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal !important;
+}
+.toe-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

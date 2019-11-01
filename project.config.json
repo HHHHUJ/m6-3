@@ -7,6 +7,7 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": false,
@@ -20,9 +21,10 @@
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
 	"appid": "wx49ff8c8d02bcd086",
-	"projectname": "mpvueapp",
+	"projectname": "m6-3",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"libVersion": "2.9.1",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -32,13 +34,38 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/detail/main",
+					"pathName": "pages/detail/main",
+					"query": "list= {\"_id\":\"586490d25dba5af703447d2a43be56a1\",\"_openid\":\"oTMcG0ccWPTRct0_9z3m0Z5GOcyw\",\"image\":\"cloud://hujie-b7d5f7.6875-hujie-b7d5f7-1258016123/2yitztcfe2z0.jpg\",\"name\":\"棉+羊毛过膝长款针织连衣裙娃娃领九分袖长裙 驼色 （7天发） 均码\",\"price\":\"199\"}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/upload/main",
+					"pathName": "pages/upload/main",
+					"query": "list= {\"_id\":\"586490d25dba5af703447d2a43be56a1\",\"_openid\":\"oTMcG0ccWPTRct0_9z3m0Z5GOcyw\",\"image\":\"cloud://hujie-b7d5f7.6875-hujie-b7d5f7-1258016123/2yitztcfe2z0.jpg\",\"name\":\"棉+羊毛过膝长款针织连衣裙娃娃领九分袖长裙 驼色 （7天发） 均码\",\"price\":\"199\"}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试页面",
+					"pathName": "pages/test/main",
+					"scene": null
+				}
+			]
 		}
 	}
 }

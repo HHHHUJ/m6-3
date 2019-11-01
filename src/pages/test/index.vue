@@ -15,6 +15,7 @@ div
   Button(@click="modifyData") 修改数据
   Button(@click="findData") 查找数据
   Button(@click="pulldown") 下拉刷新
+  Button(@click="Aggregate") 数据聚合
   <button  open-type="getUserInfo" lang="zh_CN" @getuserinfo="bindGetUserInfo">获取用户信息</button>
   div(style="width:132px;height:132px;")
     <open-data type="userAvatarUrl" class="avatar"></open-data>
@@ -95,13 +96,13 @@ function uploadPic () {
     success: res => {
       console.log(res);
       this.images = res.tempFilePaths;
-      // wx.cloud.uploadFile({
-      //   cloudPath: 'images/panda.jpg',
-      //   filePath: res.tempFilePaths[0],
-      //   success: res => {
-      //     console.log('上传成功', res);
-      //   }
-      // })
+      wx.cloud.uploadFile({
+        cloudPath: 'images/expand.png',
+        filePath: res.tempFilePaths[0],
+        success: res => {
+          console.log('上传成功', res);
+        }
+      })
     }
   })
 }
@@ -115,6 +116,35 @@ function previewImage() {
     urls: this.images
   });
 }
+
+/**
+ * 数据聚合
+ */
+
+function Aggregate() {
+  let _ = this.$db.command;
+  const $ = this.$db.command.aggregate
+  // this.$db.collection('goods').doc('1c756ce65dbb971303e5c10203a1f27c').update({
+  //   data:{
+  //     child:_.push({
+  //         name:'777',
+  //         price:'7777',
+  //         image:[]
+  //       })
+  //   }
+  // })
+  this.$db.collection('goods')
+  .aggregate()
+  .project({
+    type:1
+  })
+  .end()
+  .then(res=>{
+    wx.showToast('更新成功');
+    console.log(res);
+  })
+}
+
 export default {
   data () {
     return {
@@ -141,6 +171,7 @@ export default {
     delData,
     uploadPic,
     previewImage,
+    Aggregate,
     bindViewTap () {
       // const url = '../logs/main'
       // if (mpvuePlatform === 'wx') {
